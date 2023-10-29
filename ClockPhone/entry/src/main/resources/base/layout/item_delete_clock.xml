@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:item_text_date"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="center"
+        ohos:left_margin="20vp"
+        ohos:padding="5vp"
+        ohos:text="Date"
+        ohos:text_size="20fp"/>
+
+    <Text
+        ohos:id="$+id:item_text_time"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:below="$id:item_text_date"
+        ohos:layout_alignment="center"
+        ohos:left_margin="20vp"
+        ohos:padding="5vp"
+        ohos:text="Time"
+        ohos:text_size="20fp"/>
+
+    <Checkbox
+        ohos:id="$+id:item_checkbox"
+        ohos:height="30vp"
+        ohos:width="60vp"
+        ohos:align_parent_right="true"
+        ohos:check_element="$graphic:checkbox_deleteclock"
+        ohos:right_margin="20vp"
+        ohos:top_margin="20vp"/>
+
+    <Component
+        ohos:id="$+id:item_divider"
+        ohos:height="1vp"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:list_divider"
+        ohos:below="$id:item_text_time"/>
+</DependentLayout>

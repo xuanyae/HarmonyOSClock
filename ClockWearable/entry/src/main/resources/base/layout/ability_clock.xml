@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical"
+    ohos:background_element="$media:bg_remind">
+
+    <Image
+        ohos:height="100vp"
+        ohos:width="100vp"
+        ohos:image_src="$media:remind"
+        ohos:scale_x="0.5"
+        ohos:scale_y="0.5"/>
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="该起床了哦 !"
+        ohos:text_color="#ff0077"
+        ohos:text_size="20vp"/>
+
+    <Button
+        ohos:id="$+id:btn_close"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:padding="6vp"
+        ohos:text="关闭闹铃"
+        ohos:text_size="18vp"
+        ohos:top_margin="10fp"
+        ohos:background_element="$graphic:background_button"/>
+</DirectionalLayout>

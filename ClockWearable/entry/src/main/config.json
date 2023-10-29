@@ -1,0 +1,79 @@
+{
+  "app": {
+    "bundleName": "com.example.clockwearable",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+    "default": {
+      "network": {
+        "cleartextTraffic": true
+      }
+    }
+  },
+  "module": {
+    "package": "com.example.clockwearable",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.clockwearable.MainAbility",
+    "deviceType": [
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.example.clockwearable.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "permissions": [
+          "com.example.clockwearable.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.clockwearable.ClockDataAbility",
+        "icon": "$media:icon",
+        "description": "$string:clockdataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.clockwearable.ClockDataAbility"
+      },
+      {
+        "name": "com.example.clockwearable.ClockServiceAbility",
+        "icon": "$media:icon",
+        "description": "$string:clockserviceability_description",
+        "type": "service"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.SET_NETWORK_INFO"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:id="$+id:layout_clock"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+
+        <DependentLayout
+            ohos:height="60vp"
+            ohos:width="match_parent"
+            ohos:padding="10vp">
+
+            <Text
+                ohos:id="$+id:text_clockname"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:align_parent_left="true"
+                ohos:background_element="$graphic:background_ability_main"
+                ohos:layout_alignment="horizontal_center"
+                ohos:left_margin="20vp"
+                ohos:text="闹钟列表"
+                ohos:text_size="25fp"
+                ohos:vertical_center="true"/>
+
+            <Image
+                ohos:id="$+id:image_add_clock"
+                ohos:height="25vp"
+                ohos:width="25vp"
+                ohos:align_parent_right="true"
+                ohos:foreground_element="$media:add"
+                ohos:right_margin="20vp"
+                ohos:vertical_center="true"/>
+
+        </DependentLayout>
+
+        <ListContainer
+            ohos:id="$+id:list_clock_view"
+            ohos:height="match_content"
+            ohos:width="match_parent"/>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>
